@@ -252,6 +252,11 @@ hdmi_timings=800 0 50 20 50 480 1 3 2 3 0 0 0 60 0 32000000 6
 # Use a basic GPIO backlight driver with on/off support
 dtoverlay=hyperpixel-gpio-backlight
 EOT"
+	
+fi
+
+if [ $(grep -c "batthdtftp" $PANEL) == 0 ]; then
+    echo -e "\nWriting battery setting to $PANEL..."
 	bash -c "cat <<EOT >> $PANEL
 Plugin {
   type=batthdtftp
