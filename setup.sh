@@ -54,7 +54,7 @@ APTSRC=/etc/apt/sources.list
 INITABCONF=/etc/inittab
 BLACKLIST=/etc/modprobe.d/raspi-blacklist.conf
 LOADMOD=/etc/modules
-PANEL=~/.config/lxpanel/LXDE-pi/panels/panel
+PANEL=/home/pi/.config/lxpanel/LXDE-pi/panels/panel
 
 # function define
 
